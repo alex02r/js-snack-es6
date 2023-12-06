@@ -37,98 +37,98 @@ const bikes = [
 const teams = [
     {
         nome: "Juventus",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Inter",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Milan",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Napoli",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Roma",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Bologna",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Lazio",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Torino",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Sassuolo",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Monza",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Atalanta",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Empoli",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Verona",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Frosinone",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Genoa",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Lecce",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Udinese",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Cagliari",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     },
     {
         nome: "Salernitana",
-        "punti fatti": "",
-        "falli subiti": "",
+        puntiFatti: "",
+        falliSubiti: "",
     }
 ];
 
@@ -149,10 +149,19 @@ console.log(mex);
 //SNACK 2
 
 teams.forEach(elem => {
-    let score = Math.floor(Math.random()*100 + 1);
+    let add_score = Math.floor(Math.random()*100 + 1);
     let fouls = Math.floor(Math.random()*100 + 1);
 
-    elem["punti fatti"] = score;
-    elem["falli subiti"] = fouls;
+    elem.puntiFatti = add_score;
+    elem.falliSubiti = fouls;
 });
 
+let falliSquadre = [];
+for (let i = 0; i < teams.length; i++) {
+    let {nome, falliSubiti} = teams[i];
+    let obj = {};
+    obj.squadra = nome;
+    obj.falli_subiti = falliSubiti;
+    falliSquadre.push(obj);
+}
+console.log(falliSquadre);
