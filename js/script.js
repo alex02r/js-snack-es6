@@ -33,6 +33,105 @@ const bikes = [
         peso: "9"
     }
 ];
+//SNACK 2
+const teams = [
+    {
+        nome: "Juventus",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Inter",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Milan",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Napoli",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Roma",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Bologna",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Lazio",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Torino",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Sassuolo",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Monza",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Atalanta",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Empoli",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Verona",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Frosinone",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Genoa",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Lecce",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Udinese",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Cagliari",
+        "punti fatti": "",
+        "punti subiti": "",
+    },
+    {
+        nome: "Salernitana",
+        "punti fatti": "",
+        "punti subiti": "",
+    }
+];
+
 
 let peso_minore = 20;
 let bici;
@@ -45,3 +144,5 @@ for (let i = 0; i < bikes.length; i++) {
 }
 let mex = `la ${bici} è la bici che pesa di meno : ${peso_minore}`;
 console.log(mex);
+
+//SNACK 2
