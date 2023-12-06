@@ -166,6 +166,47 @@ function generateRandomLetter() {
     return lista[i];
 }
 
+//funzione che crea l'articolo
+function crateArticles(array) {
+    const container = document.getElementById('articles');
+    
+
+    for (let i = 0; i < array.length; i++) {
+
+        let article = document.createElement('div');
+        article.classList.add('article');
+
+        let head = document.createElement('div');
+        let article_name = document.createElement('h5');
+        let article_type = document.createElement('span');
+        let article_letter = document.createElement('h5');
+
+        let body = document.createElement('div');
+        body.classList.add('d-flex');
+        body.classList.add('align-items-end');
+        body.innerText="colore: ";
+
+        let color = document.createElement('div');
+        color.classList.add('color');
+
+        article_name.innerText = array[i].name;
+        article_type.innerText = array[i].type;
+        article_letter.innerText = array[i].letter;
+
+        head.appendChild(article_name);
+        head.appendChild(article_type);
+        head.appendChild(article_letter);
+
+        color.style.backgroundColor = array[i].color;
+
+        body.appendChild(color);
+        article.appendChild(head);
+        article.appendChild(body);
+        container.appendChild(article);
+    }
+
+}
+
 
 //SNACK 1
 let bici;
@@ -229,5 +270,5 @@ for (let i = 0; i < newArticles.length; i++) {
     let lettera = generateRandomLetter();
     newArticles[i].letter = lettera;
 };
-
+crateArticles(newArticles)
 console.log(newArticles);
