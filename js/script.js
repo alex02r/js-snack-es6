@@ -155,6 +155,17 @@ const articles = [
     }
 ]
 
+//SNACK3
+//Funzione che genera una lettera casuale
+function generateRandomLetter() {
+    //facciamo un "array" di tutte le lettere dell'alfabeto
+    let lista = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    //generiamo un numero che va da 1 a quante sono tutte le lettere
+    let i = Math.floor(Math.random()*lista.length +1);
+    //ritorniamo il valore dell array in posizione i (una lettera)
+    return lista[i];
+}
+
 
 //SNACK 1
 let peso_minore = 20;
