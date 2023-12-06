@@ -3,3 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+#articles{
+    display: flex;
+}
+.article{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.color{
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
