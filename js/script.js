@@ -194,13 +194,29 @@ teams.forEach(elem => {
     elem.falliSubiti = fouls;
 });
 
+const list = document.getElementById('list');
+
 let falliSquadre = [];
 for (let i = 0; i < teams.length; i++) {
+    let ul = document.createElement('ul');
+    ul.classList.add('list-unstyled');
+
+    let item1 = document.createElement('li');
+    let item2 = document.createElement('li');
+
     let {nome, falliSubiti} = teams[i];
     let obj = {};
     obj.squadra = nome;
     obj.falli_subiti = falliSubiti;
     falliSquadre.push(obj);
+
+    item1.innerText = nome;
+    item2.innerText = `Falli subiti: ${falliSubiti}`;
+
+    ul.appendChild(item1);
+    ul.appendChild(item2);
+    list.appendChild(ul);
+
 }
 console.log(falliSquadre);
 
