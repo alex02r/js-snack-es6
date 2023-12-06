@@ -168,11 +168,10 @@ function generateRandomLetter() {
 
 
 //SNACK 1
-let peso_minore = 20;
 let bici;
-for (let i = 0; i < bikes.length; i++) {
+for (let i = 1; i < bikes.length; i++) {
     let {peso} = bikes[i];
-    if(parseInt(peso) < peso_minore){
+    if(parseInt(peso) < bikes[0].peso){
         peso_minore = peso;
         bici = bikes[i].name;
     }
