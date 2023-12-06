@@ -177,8 +177,13 @@ for (let i = 0; i < bikes.length; i++) {
         bici = bikes[i].name;
     }
 }
-let mex = `la ${bici} è la bici che pesa di meno : ${peso_minore}`;
-console.log(mex);
+
+const mex = document.getElementById('mex');
+
+let text = `la ${bici} è la bici che pesa di meno : ${peso_minore}`;
+
+mex.innerText = text;
+console.log(text);
 
 //SNACK 2
 
