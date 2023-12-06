@@ -131,6 +131,29 @@ const teams = [
         falliSubiti: "",
     }
 ];
+//SNACK 3
+const articles = [
+    {
+        name: "Poppy",
+        type: "tshirt",
+        color: "red"
+    },
+    {
+        name: "Jumping",
+        type: "occhiali",
+        color: "blue"
+    },
+    {
+        name: "CrissCross",
+        type: "scarpe",
+        color: "black"
+    },
+    {
+        name: "Jenny",
+        type: "borsa",
+        color: "pink"
+    }
+]
 
 
 //SNACK 1
@@ -165,3 +188,5 @@ for (let i = 0; i < teams.length; i++) {
     falliSquadre.push(obj);
 }
 console.log(falliSquadre);
+
+//SNACK 3
