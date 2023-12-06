@@ -201,3 +201,13 @@ for (let i = 0; i < teams.length; i++) {
 console.log(falliSquadre);
 
 //SNACK 3
+
+//copiamo l'array di oggetti degli articoli e gli aggiungiamo la lettera
+const newArticles = [ ...articles ];
+
+for (let i = 0; i < newArticles.length; i++) {
+    let lettera = generateRandomLetter();
+    newArticles[i].letter = lettera;
+};
+
+console.log(newArticles);
